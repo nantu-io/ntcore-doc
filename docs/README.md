@@ -21,3 +21,10 @@ NT-Core is an open source MLOps platform to help user developing, testing, versi
   <em>"No machine learning model is valuable, unless it’s deployed to production"</em>. Model deployment could be the most difficult and yet critical operation in the whole process. More than 87% of data science projects never make it to production. NT-Core platform helps you deploy model easily with multiple supported frameworks and languages.
 
   Check out more details about [**deployment**](tutorial.md#Deployment).
+
+## Support
+- Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-themeable/issues) for bug reports, feature requests, or questions
+- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/docsify-themeable) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fdocsify-themeable&hashtags=css,developers,frontend,javascript) to support the project!
+
+## License
+This project is licensed under the [MIT license](https://github.com/jhildenbiddle/docsify-themeable/blob/master/LICENSE).

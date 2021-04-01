@@ -5,19 +5,26 @@ NT-Core是一个开源MLOps平台，旨在帮助用户开发，测试，控制�
 - **开发IDE**<br>
   NT-Core平台利用jupyter notebook提供无缝的开发体验, 支持多种框架和语言。富文本开发环境允许您编写代码，运行代码，显示输出，并且还可以添加说明，公式，图表。使您的工作更透明，易理解，可重复和可共享。
 
-  更多关于[**开发**](tutorial.md#Development)的细节请移步这里。
+  请移步这里了解更多关于[**开发**](tutorial.md#Development)的细节。
 
 - **模型实验**<br>
   机器学习项目需要不同模型之间的多次实验，通常比普通的软件开发项目需要更多的管理分支和实验次数。NT-Core平台可以为您记录的所有模型实验，让您能够进行数据对比并获得最佳的实验结果。
   
-  更多关于[**模型实验**](tutorial.md#Experiment)的细节请移步这里。
+  请移步这里了解更多关于[**模型实验**](tutorial.md#Experiment)的细节。
 
 - **版本控制**<br>
   机器学习涉及快速的实验和迭代，如果没法追踪历史版本，您没法更有效的改进模型。NT-Core平台提供了类似git的版本功能，可让您追踪所有的模型版本，它们的性能以及使用的超参数。
 
-  更多关于[**版本控制**](tutorial.md#Versioning)的细节请移步这里。
+  请移步这里了解更多关于[**版本控制**](tutorial.md#Versioning)的细节。
 
 - **模型部署**<br>
   <em>“除非将机器学习模型部署到生产环境中，否则它们毫无意义”</em>。在整个机器学习开发流程中，模型部署可能是最困难但也是最关键的操作，有超过87％的机器学习和数据科学项目从未投入生产。NT-Core平台可帮助您轻松部署模型到各种目标环境。 
 
-  更多关于[**发布模型**](tutorial.md#Deployment)的细节请移步这里。
+  请移步这里了解更多关于[**发布模型**](tutorial.md#Deployment)的细节。
+
+## 帮助支持
+- Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-themeable/issues) for bug reports, feature requests, or questions
+- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/docsify-themeable) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fdocsify-themeable&hashtags=css,developers,frontend,javascript) to support the project!
+
+## 许可
+This project is licensed under the [MIT license](https://github.com/jhildenbiddle/docsify-themeable/blob/master/LICENSE).
