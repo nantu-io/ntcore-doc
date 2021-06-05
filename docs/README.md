@@ -23,8 +23,8 @@ NT-Core is an open source MLOps platform to help user developing, testing, versi
   Check out more details about [**deployment**](tutorial.md#Deployment).
 
 ## Support
-- Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-themeable/issues) for bug reports, feature requests, or questions
-- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/docsify-themeable) or ❤️ [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Fdocsify-themeable&hashtags=css,developers,frontend,javascript) to support the project!
+- Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-themeable/issues) for bug reports, feature requests, or other questions
+- Add a ⭐️ [on GitHub](https://github.com/jhildenbiddle/docsify-themeable) to support the project!
 
 ## License
 This project is licensed under the [MIT license](https://github.com/jhildenbiddle/docsify-themeable/blob/master/LICENSE).

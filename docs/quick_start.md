@@ -1,37 +1,54 @@
-# Quick Start
-## Setup Environment
+## <b>Quick Start</b> <!-- {docsify-ignore} -->
+### Setup Environment
 
 1. **Download and install Docker**
 
   NT-Core platform depends on docker to start local instances. Please follow this <em>[docker official instruction](https://docs.docker.com/get-started/#download-and-install-docker)</em> to download and install the Docker engine.
 
-2. **Checkout github repository**
+2. **Download NTcore github repo**
 
-  Clone the NT-Core repository via git clone command
+  Download the NTCore repository via git clone command
   ```
-  git clone https://github.com/dsp-columbus/ntcore.git
-  ```
-
-3. **Building frontend assets**
-
-  Go to webapp folder under ntcore repository. Build frontend assets
-  ```
-  cd webapp/
-  npm install .
-  npm run build
+  git clone https://github.com/nantutech/ntcore.git
   ```
 
-4. **Starting NT Core server**
+3. **Start NTCore server**
 
-  ?> Please make sure your 8180 port is not in use before this step
+  goto ntcore folder(make sure docker service is up and running)
   ```
-    cd ../
-    npm run dev
+  cd ntcore/
+  docker-compose up
   ```
 
-5. **Go to NT-Core Home page**
+4. **Go to NT-Core Home page**
   Go to <em>http://localhost:8180/dsp/console/home</em> in your browser. If you can see following NT home page, that means the environment has been setup correctly and you can start play with the platform now.
-  <img src="./media/nt-platform-home.png"  />
+  <img src="./media/workspace-home.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
+---
+### Build first model
+The following example uses Sklearn to build a simple Decision Tree model and uses NTCore to record the model results.
 
-## Create Your First Model
+Installation：
+```
+git clone https://github.com/nantutech/mlflow.git mlflow-nantu
+pip3 install ntcore
+```
+
+Modeling and version control:
+```
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
+import mlflow
+# enable autologging
+ntcore.sklearn.autolog()
+
+iris = load_iris()
+X = iris.data[:, 2:] # petal length and width
+y = iris.target
+
+tree_clf = DecisionTreeClassifier(max_depth=2, random_state=42)
+# train a model
+
+with mlflow.start_run() as run:
+    tree_clf.fit(X, y)
+```
