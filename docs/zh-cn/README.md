@@ -23,8 +23,8 @@ NTCore是一个开源机器学习开发与运维（MLOps）平台，旨在帮助
   请移步这里了解更多关于[**发布模型**](tutorial.md#Deployment)的细节。
 
 ## 帮助支持
-- 创建一个[GitHub Issue](https://github.com/jhildenbiddle/docsify-themeable/issues)来回汇报漏洞、增强功能或者提出其他问题。
-- 给我们点个 ⭐️ [on GitHub](https://github.com/jhildenbiddle/docsify-themeable)来支持我们的项目！
+- 创建一个[GitHub Issue](https://github.com/nantutech/ntcore/issues) 来汇报漏洞、增强功能或者提出其他问题。
+- 给我们点个 ⭐️ [on GitHub](https://github.com/nantutech/ntcore) 来支持我们的项目！
 
 ## 许可
-这个项目遵循[MIT许可](https://github.com/jhildenbiddle/docsify-themeable/blob/master/LICENSE).
+这个项目遵循[MIT许可](https://github.com/nantutech/ntcore/blob/main/LICENSE).

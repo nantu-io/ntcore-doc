@@ -23,8 +23,8 @@ NTCore is an open source machine learning development and operations (MLOps) pla
   Check out more details about [**deployment**](tutorial.md#Deployment).
 
 ## Support
-- Create a [GitHub issue](https://github.com/jhildenbiddle/docsify-themeable/issues) for bug reports, feature requests, or other questions
-- Add a ⭐️ [on GitHub](https://github.com/jhildenbiddle/docsify-themeable) to support the project!
+- Create a [GitHub issue](https://github.com/nantutech/ntcore/issues) for bug reports, feature requests, or other questions
+- Add a ⭐️ [on GitHub](https://github.com/nantutech/ntcore) to support the project!
 
 ## License
-This project is licensed under the [MIT license](https://github.com/jhildenbiddle/docsify-themeable/blob/master/LICENSE).
+This project is licensed under the [MIT license](https://github.com/nantutech/ntcore/blob/main/LICENSE).
