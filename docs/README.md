@@ -1,24 +1,24 @@
 # Overview
 ---
-NT-Core is an open source MLOps platform to help user developing, testing, versioning and deploying models. NT-Core provides the complete machine learning and data science development experience, which could substantially reduce the time between creating models and deploying them to the target environment. NT-Core platform provides four key features, including: development IDE, model experiment, model versioning and model deployment.
+NTCore is an open source machine learning development and operations (MLOps) platform designed to help users develop, test, control model versions and deploy models. NTCore provides a complete development experience for machine learning and data science, significantly reducing the time and cost required between creating a model and deploying it to a target environment.The NTCore platform provides four key features, including: development IDE, model experimentation, model version control and model deployment.
 
 - **Development IDE**<br>
-  NT-Core leverage jupyter notebook to provide seamless development experience，supporting multiple frameworks and languages. The development environment allows you run code, display the output, and also add explanations, formulas, charts, and make your work more transparent, understandable, repeatable, and shareable.  
+  The NTCore platform leverages jupyter notebook to provide a seamless development experience, supporting multiple frameworks and languages. The rich text development environment makes model development more transparent, understandable, repeatable and sharable.
 
   Check out more details about [**development**](tutorial.md#Development).
 
 - **Model experiment**<br>
-  Machine learning project normally involves many experiments with different models and it has far more branching and experimentation than a typical software project. NT-Core platform keeping all of your model experiments organized and having a process that lets you draw the best results.
+  Machine learning projects require multiple experiments between different models, often requiring more managed branches and experiments than a normal software development project. the NTCore platform records all model experiments, compares data and obtains the best experimental results.
 
   Check out more details about [**experiment**](tutorial.md#Experiment).
 
 - **Model versioning**<br>
-  Machine Learning (ML) involves rapid experimentation and iteration, and you won't learn much without tracking your modeling history. NT-Core provided git-like version feature to let you keep track of all of your models, how well they’ve done, and what hyperparameters you used to get there.
+  The NTCore platform provides a Git-like version control feature that allows users to quickly experiment and iterate, keep track of all model versions stored, and compare important parameters.
 
   Check out more details about [**versioning**](tutorial.md#Versioning).
 
 - **Model deployment**<br>
-  <em>"No machine learning model is valuable, unless it’s deployed to production"</em>. Model deployment could be the most difficult and yet critical operation in the whole process. More than 87% of data science projects never make it to production. NT-Core platform helps you deploy model easily with multiple supported frameworks and languages.
+  Model deployment is perhaps the most difficult but critical operation in the entire machine learning development process, with over 87% of machine learning and data science projects never going into production. the NTCore platform helps users easily deploy models to a variety of target environments.
 
   Check out more details about [**deployment**](tutorial.md#Deployment).
 
