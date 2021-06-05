@@ -8,7 +8,7 @@ NTCore is an open source machine learning development and operations (MLOps) pla
   Check out more details about [**development**](tutorial.md#Development).
 
 - **Model experiment**<br>
-  Machine learning projects require multiple experiments between different models, often requiring more managed branches and experiments than a normal software development project. the NTCore platform records all model experiments, compares data and obtains the best experimental results.
+  Machine learning projects require multiple experiments between different models, often requiring more managed branches and experiments than a normal software development project. The NTCore platform records all model experiments, compares data and obtains the best experimental results.
 
   Check out more details about [**experiment**](tutorial.md#Experiment).
 
@@ -18,7 +18,7 @@ NTCore is an open source machine learning development and operations (MLOps) pla
   Check out more details about [**versioning**](tutorial.md#Versioning).
 
 - **Model deployment**<br>
-  Model deployment is perhaps the most difficult but critical operation in the entire machine learning development process, with over 87% of machine learning and data science projects never going into production. the NTCore platform helps users easily deploy models to a variety of target environments.
+  Model deployment is perhaps the most difficult but critical operation in the entire machine learning development process, with over 87% of machine learning and data science projects never going into production. The NTCore platform helps users easily deploy models to a variety of target environments.
 
   Check out more details about [**deployment**](tutorial.md#Deployment).
 
