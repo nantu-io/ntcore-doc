@@ -1,6 +1,6 @@
 # Overview
 ---
-NTCore is an open source machine learning development and operations (MLOps) platform designed to help users develop, test, control model versions and deploy models. NTCore provides a complete development experience for machine learning and data science, significantly reducing the time and cost required between creating a model and deploying it to a target environment.The NTCore platform provides four key features, including: development IDE, model experimentation, model version control and model deployment.
+NTCore is an open source machine learning development and operations (MLOps) platform designed to help users develop, test, control model versions and deploy models. NTCore provides a complete development experience for machine learning and data science, significantly reducing the time and cost required between creating a model and deploying it to a target environment. The NTCore platform provides four key features, including: Development IDE, Model experiment, Model versioning and Model deployment.
 
 - **Development IDE**<br>
   The NTCore platform leverages jupyter notebook to provide a seamless development experience, supporting multiple frameworks and languages. The rich text development environment makes model development more transparent, understandable, repeatable and sharable.
