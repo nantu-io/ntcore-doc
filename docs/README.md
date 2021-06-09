@@ -27,4 +27,4 @@ NTCore is an open source machine learning development and operations (MLOps) pla
 - Add a ⭐️ [on GitHub](https://github.com/nantutech/ntcore) to support the project!
 
 ## License
-This project is licensed under the [MIT license](https://github.com/nantutech/ntcore/blob/main/LICENSE).
+This project is licensed under the [Apache 2.0](https://github.com/nantutech/ntcore/blob/main/LICENSE).
