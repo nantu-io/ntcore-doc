@@ -19,4 +19,4 @@ NTCore是一个开源机器学习开发与运维（MLOps）平台，旨在帮助
 - 给我们点个 ⭐️ [on GitHub](https://github.com/nantutech/ntcore) 来支持我们的项目！
 
 ## 许可
-这个项目遵循[MIT许可](https://github.com/nantutech/ntcore/blob/main/LICENSE).
+这个项目遵循[Apache 2.0许可](https://github.com/nantutech/ntcore/blob/main/LICENSE).
