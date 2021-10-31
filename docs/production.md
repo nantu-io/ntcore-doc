@@ -5,7 +5,7 @@
 On-Premises is suitable for you if you're experienced in Kubernetes.
 1. **Kubernetes**: A Kubernetes cluster is required to run NTCore in production. Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. You can setup a Kubernetes cluster manually following this [guidance](https://kubernetes.io/docs/setup/production-environment/).
 
-2. **kubectl**: kubectl is the Kubenetes command line tool that allows you to run commands against Kubernetes clusters. Follow this [guidance](https://kubernetes.io/docs/tasks/tools/) to install kubectl, and this [guidance](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) to configure kubectl to communicate with your Kubernetes cluster. Run the below command to confirm if kubectl is configured properly.
+2. **kubectl**: kubectl is the Kubernetes command line tool that allows you to run commands against Kubernetes clusters. Follow this [guidance](https://kubernetes.io/docs/tasks/tools/) to install kubectl, and this [guidance](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/) to configure kubectl to communicate with your Kubernetes cluster. Run the below command to confirm if kubectl is configured properly.
 ```
 kubectl version
 ```
@@ -13,7 +13,7 @@ kubectl version
 3. **PostgreSQL**: NTCore uses Postgres SQL to store data in production. Download and install Postgres SQL database following this [guidance](https://www.postgresql.org/download/).
 
 ### Amazon EKS
-AWS provides the Elastic Kubernetes Servie (Amazon EKS) to run and scale Kubernetes applications. There're different ways to setup EKS cluster. This tutorial goes through the steps using eksctl which is a simple tool.
+AWS provides the Elastic Kubernetes Service (Amazon EKS) to run and scale Kubernetes applications. There're different ways to setup EKS cluster. This tutorial goes through the steps using eksctl which is a simple tool.
 1. **kubectl**: A command line tool to work with Kubernetes clusters. Follow this [guidance](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) to install kubectl.
 2. **eksctl**: A command line tool to create and manage EKS clusters. Follow this [guidance](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) to install eksctl.
 3. **awscli**: A unified tool to manage AWS services. Follow this [guidance](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) to install awscli.
@@ -233,8 +233,8 @@ password: <postgres_password>
 
 3. <ins>Inside</ins> the NTCore repository, run the below command.
 ```
-kubectl apply -f kube/custom-resources.yml
-kubectl apply -f kube/
+kubectl apply -f kube/traefik/
+kubectl apply -f kube/ntcore/
 ```
 4. Run the below command to find out the hostname of ntcore (See the EXTERNAL-IP column).
 ```
