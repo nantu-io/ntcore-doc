@@ -1,2 +1,3 @@
 - [快速开始](/zh-cn/quick_start.md)
 - [详细教程](/zh-cn/tutorial.md)
+- [生产部署](/zh-cn/production.md)
