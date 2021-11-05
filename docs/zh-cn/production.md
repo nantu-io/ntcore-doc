@@ -17,7 +17,7 @@ kubectl version
 AWS 提供 Elastic Kubernetes Service (Amazon EKS) 来运行和扩展Kubernetes应用程序。有多种设置 EKS 集群的方法。本教程介绍使用 eksctl 的步骤，这是一个简单的工具。
 
 1. **kubectl**: 一个用于 Kubernetes 集群的命令行工具。按照此[指南](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)安装 kubectl。  
-2. **eksctl**: 用于创建和管理 EKS 集群的命令行工具。按照此[指南](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) to安装 eksctl。  
+2. **eksctl**: 用于创建和管理 EKS 集群的命令行工具。按照此[指南](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)安装 eksctl。  
 3. **awscli**: 管理 AWS 服务的统一工具。按照此[指南](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)安装 awscli
 4. **IAM permissions**: eksctl 需要 IAM 权限才能管理 EKS 集群的 AWS 资源。
     1. 登录您的 AWS 账户并转到 IAM 服务控制台
