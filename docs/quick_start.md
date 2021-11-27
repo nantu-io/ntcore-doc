@@ -26,7 +26,7 @@
 
 ---
 ### Build first model
-The following example uses Sklearn to build a simple Decision Tree model and uses NTCore to record the model results.
+The following example uses Sklearn to build a simple Random Forest model and uses NTCore to record the model results.
 
 Installation：
 ```
