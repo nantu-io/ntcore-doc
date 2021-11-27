@@ -29,7 +29,7 @@
 
 ---
 ### 建立第一个模型
-以下例子使用Sklearn建立了一个简单的Decision Tree模型，并运用NTCore记录模型结果。
+以下例子使用Sklearn建立了一个简单的Random Forest模型，并运用NTCore记录模型结果。
 
 安装：
 ```
