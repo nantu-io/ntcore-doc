@@ -12,7 +12,7 @@
 
   通过git的clone命令下载NTCore代码仓的代码
   ```
-  git clone https://github.com/nantutech/ntcore.git
+  git clone https://github.com/nantu-io/ntcore.git
   ```
 
 3. **启动NTCore服务**
@@ -33,25 +33,25 @@
 
 安装：
 ```
-git clone https://github.com/nantutech/mlflow.git mlflow-nantu
 pip3 install ntcore
 ```
 
 建模与模型版本控制：
 ```
-from sklearn.datasets import load_iris
-from sklearn.tree import DecisionTreeClassifier
-import ntcore
-# enable autologging
-ntcore.sklearn.autolog()
+# Config the ntcore client
+from ntcore import client
+client.set_endpoint('http://localhost:8000')
+client.autolog('C8W60XEPH7DA3AAH3S41PJZ3OV')
 
-iris = load_iris()
-X = iris.data[:, 2:] # petal length and width
-y = iris.target
+# Prepare the training dataset
+from sklearn import datasets
+iris = datasets.load_iris()
 
-tree_clf = DecisionTreeClassifier(max_depth=2, random_state=42)
-# train a model
+# Init the model
+from sklearn.ensemble import RandomForestClassifier
+clf = RandomForestClassifier(max_depth=2, random_state=0)
 
-with mlflow.start_run() as run:
-    tree_clf.fit(X, y)
+# Start an experiment run
+with client.start_run():
+    clf.fit(iris.data, iris.target_names[iris.target])
 ```
