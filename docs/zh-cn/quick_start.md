@@ -25,7 +25,7 @@
 
 4. **登录NTCore平台首页**
   在浏览器中打开<em>http://localhost:8000/dsp/console/home</em>。如果出现如下所示的平台首页, 那代表环境已经搭建成功。
-  <img src="./media/workspace-home.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
+  <img src="../media/workspace-home.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
 ---
 ### 建立第一个模型
