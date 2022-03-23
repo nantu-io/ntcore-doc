@@ -41,7 +41,9 @@ workspace_id = "C8W60XEPH7DA3AAH3S41PJZ3OV" # any available workspace ids in you
 client.get_workspace(workspace_id)
 ```
 
-### 删除 Workspace
+#### 删除 Workspace
+
+用户可删除特定 Workspace
 
 <b>Python 例子:</b>
 
@@ -52,7 +54,9 @@ workspace_id = "C8W60XEPH7DA3AAH3S41PJZ3OV" # any available workspace ids in you
 client.delete_workspace(workpsace_id)
 ```
 
-### 列举所有 Workspace
+#### 列举所有 Workspace
+
+用户可列举所有 Workspace
 
 <b>Python 例子:</b>
 
@@ -75,7 +79,7 @@ git clone https://github.com/nantu-io/ntcore.git
 pip3 install ntcore
 ```
 
-比如在运用 SKlearn 进行模型开发实验时，只需在代码中加入以下方程便可记录模型结果。
+比如在运用 SKlearn 进行模型开发实验时，只需在代码中加入以下方法便可记录模型结果。
 
 <b>Python 例子:</b>
 
@@ -83,7 +87,7 @@ pip3 install ntcore
 from ntcore import client
 #指向URL
 client.set_endpoint('http://localhost:8000')
-#指向指向workspace ID
+#指向 workspace ID
 client.autolog('C8W60XEPH7DA3AAH3S41PJZ3OV')
 ```
 
@@ -91,15 +95,17 @@ client.autolog('C8W60XEPH7DA3AAH3S41PJZ3OV')
 
 <img src="./media/workspace-experiment.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
-删除实验
+#### 删除实验
+
+删除特定 Workspace 里所有实验
 
 <b>Python 例子:</b>
 
 ```
 from ntcore import client
 
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # any available workspace ids in your console
-version = 1 # any avaialble version
+workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
+version = 1 # 任意现有的版本
 client.delete_experiment(workspace_id, version)
 ```
 
@@ -116,7 +122,7 @@ git clone https://github.com/nantu-io/ntcore.git
 pip3 install ntcore
 ```
 
-注册模型。
+#### 注册模型。
 
 <img src="./media/workspace-reg.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
@@ -125,12 +131,12 @@ pip3 install ntcore
 ```
 from ntcore import client
 
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # available workspace ids in your console
-version = 1 #"available version"
+workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
+version = 1 # 任意现有的版本
 client.register_experiment(workspace_id, version)
 ```
 
-已注册模型展示。
+#### 已注册模型展示。
 
 <img src="./media/workspace-reg-UI.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
@@ -139,24 +145,24 @@ client.register_experiment(workspace_id, version)
 ```
 from ntcore import client
 
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # available workspace ids in your console
+workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
 client.get_registry(workspace_id)
 ```
 
-取消模型注册
+#### 取消模型注册
 
 <b>Python 例子:</b>
 
 ```
 from ntcore import client
 
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # available workspace ids in your console
+workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
 client.unregister_experiment(workspace_id)
 ```
 
 ---
 
-### 模型 Deploy
+### 模型 Deployment
 
 测试无误后，用户可以通过 UI 一键发布成果。NTCore 将自动生成模型 API。
 
@@ -182,12 +188,12 @@ curl -H "Content-Type: application/json" -X POST --data '{"data": [[1,1 ...]]}' 
 ```
 from ntcore import client
 
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # any available workspace ids in your console
-version = 1 # any available versions
+workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
+version = 1 # 任意现有的版本
 client.deploy_model(workspace_id, version)
 ```
 
-对于所有成功 deploy 的模型进行汇总和追踪。
+#### 对于所有成功 deploy 的模型进行汇总和追踪。
 
 <img src="./media/workspace-model-track.png" style="border:1px solid #F7F7F7; border-radius:5px;" />
 
