@@ -131,11 +131,11 @@ pip3 install ntcore
 <b>Python 例子:</b>
 
 ```
-from ntcore import client
-
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
-version = 1 # 任意现有的版本
-client.register_experiment(workspace_id, version)
+# Start an experiment run
+from ntcore import Client
+client = Client()
+with client.start_run('my_workspace_id') as exper:
+    clf.fit(iris.data, iris.target_names[iris.target], experiment=exper)
 ```
 
 #### 已注册模型展示。
@@ -145,10 +145,7 @@ client.register_experiment(workspace_id, version)
 <b>Python 例子:</b>
 
 ```
-from ntcore import client
-
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
-client.get_registry(workspace_id)
+client.register_experiment(workspace_id, 1)
 ```
 
 #### 取消模型注册
@@ -188,11 +185,7 @@ curl -H "Content-Type: application/json" -X POST --data '{"data": [[1,1 ...]]}' 
 <b>Python 例子:</b>
 
 ```
-from ntcore import client
-
-workspace_id = "C82NM5766JT36WL4764YDVH9SU" # 任何现有的workspace id
-version = 1 # 任意现有的版本
-client.deploy_model(workspace_id, version)
+client.deploy_model(workspace_id,1)
 ```
 
 #### 对于所有成功 deploy 的模型进行汇总和追踪。
