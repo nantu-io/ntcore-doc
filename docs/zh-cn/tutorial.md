@@ -20,6 +20,8 @@ pip3 install ntcore
 ```
 from ntcore import client
 
+client = Client(server = 'http://localhost:8000/')
+
 name = "test"
 client.create_workspace(name)
 ```
