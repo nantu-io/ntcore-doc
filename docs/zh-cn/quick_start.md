@@ -38,12 +38,7 @@ pip3 install ntcore
 
 建模与模型版本控制：
 ```
-# Config the ntcore client
-from ntcore import client
-client.set_endpoint('http://localhost:8000')
-client.autolog('C8W60XEPH7DA3AAH3S41PJZ3OV')
-
-# Prepare the training dataset
+# Load iris dataset.
 from sklearn import datasets
 iris = datasets.load_iris()
 
@@ -52,6 +47,8 @@ from sklearn.ensemble import RandomForestClassifier
 clf = RandomForestClassifier(max_depth=2, random_state=0)
 
 # Start an experiment run
-with client.start_run():
-    clf.fit(iris.data, iris.target_names[iris.target])
+from ntcore import Client
+client = Client()
+with client.start_run('my_workspace_id') as exper:
+    clf.fit(iris.data, iris.target_names[iris.target], experiment=exper)
 ```
