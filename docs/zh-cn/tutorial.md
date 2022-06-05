@@ -29,11 +29,12 @@ pip3 install ntcore
 比如在运用SKlearn进行模型开发实验时，只需在代码中加入以下方程便可记录模型结果。
 
 ```
-from ntcore import client
-#指向URL
-client.set_endpoint('http://localhost:8000')
-#指向指向workspace ID
-client.autolog('C8W60XEPH7DA3AAH3S41PJZ3OV')
+from ntcore import Client
+
+# 创建NTCore客户端
+client = Client(server='http://localhost:8000')
+
+
 ```
 
 模型结果将会在界面上得到展示。以下是对所有模型实验结果进行记录。
