@@ -39,13 +39,19 @@ system_metrics_daemon = SystemMetricsPublisherDaemon(monitor)
 system_metrics_daemon.start()
 ```
 
-## 完整例子
-用户可以参考以下的Flask例子使用Monitoring SDK。
+## 使用步骤
+1. 登陆如下地址，并创建一个Workspace。
+```
+http://{hostname}/dsp/console/workspaces
+```
+hostname值由NTCore工作人员提供。
+2. 从NTCore UI中获得相应的workspace ID，并用于以下步骤。
+3. 参考以下的Flask例子使用Monitoring SDK。
 ```
 from ntcore.monitor import Monitor, SystemMetricsPublisherDaemon
 from flask import Flask
 
-monitor = Monitor({workspace_id}, server="http://{hostname}:{port}")
+monitor = Monitor({workspace_id}, server="http://{hostname}")
 system_metrics_daemon = SystemMetricsPublisherDaemon(monitor)
 system_metrics_daemon.start()
 
@@ -63,3 +69,4 @@ def predict():
     finally:
         monitor.add_metric("Latency", round(time.time() * 1000) - start_time)
 ```
+4. 用户可以从NTCore UI左边的菜单中选择Monitoring，并选择相应的workspace，即可观察指标及获取日志信息。
