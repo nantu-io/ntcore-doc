@@ -50,28 +50,28 @@ http://{hostname}/dsp/console/workspaces
 ```
 hostname值由NTCore工作人员提供。
 
-3. 从NTCore UI中获得相应的workspace ID，并用于以下步骤。
+3. 从NTCore UI中获得相应的Workspace ID，并用于以下步骤。
 4. 参考以下的Flask例子使用Monitoring SDK。
-```
-from ntcore.monitor import Monitor, SystemMetricsPublisherDaemon
-from flask import Flask
+    ```
+    from ntcore.monitor import Monitor, SystemMetricsPublisherDaemon
+    from flask import Flask
 
-monitor = Monitor({workspace_id}, server="http://{hostname}")
-system_metrics_daemon = SystemMetricsPublisherDaemon(monitor)
-system_metrics_daemon.start()
+    monitor = Monitor({workspace_id}, server="http://{hostname}")
+    system_metrics_daemon = SystemMetricsPublisherDaemon(monitor)
+    system_metrics_daemon.start()
 
-app = Flask(__name__)
+    app = Flask(__name__)
 
-@app.route("/predict")
-def predict():
-    start_time = round(time.time() * 1000)
-    try:
-        /* 此处补充用户的预测逻辑 */
-        monitor.add_metric("Success", 1.0)
-    except Exception as e:
-        monitor.log("[Error] Unable to generate prediction: {0}".format(str(e)))
-        monitor.add_metric("Error", 1.0)
-    finally:
-        monitor.add_metric("Latency", round(time.time() * 1000) - start_time)
-```
-5. 用户可以从NTCore UI左边的菜单中选择Monitoring，并选择相应的workspace，即可观察指标及获取日志信息。
+    @app.route("/predict")
+    def predict():
+        start_time = round(time.time() * 1000)
+        try:
+            /* 此处补充用户的预测逻辑 */
+            monitor.add_metric("Success", 1.0)
+        except Exception as e:
+            monitor.log("[Error] Unable to generate prediction: {0}".format(str(e)))
+            monitor.add_metric("Error", 1.0)
+        finally:
+            monitor.add_metric("Latency", round(time.time() * 1000) - start_time)
+    ```
+5. 用户可以从NTCore UI左边的菜单中选择Monitoring，并选择相应的Workspace，即可观察指标及获取日志信息。
